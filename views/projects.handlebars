@@ -1,0 +1,146 @@
+<!--Projects-->
+<h1>Projects..</h1>
+<div class="services">
+    <div class="services-text">
+        <p>Software Projects</p>
+        <p>2020</p>
+        <p>Projects are the epicenter of how I grow as a developer, wether taking on a project
+            individually, or in a team environment I always get the opportunity to learn
+            and grow my skillsets. Though some of these projects have caused for all-nighters or 
+            mini breakdowns, having a final project compile with no errors and efficient output is always 
+            worth it! </p>
+    </div>
+    <!--  box-->
+    <div class="box-container">
+        <!-- 1--->
+        <div class="box-1">
+            <span>1</span>
+            <p class="heading">Robotic Process <br>Automation</p>
+            <p class="details"> Utilizing programming fundamentals for creating algorithms to 
+                automate internal Federal Government processes
+            </p>
+            <button id="box1-btn">Read More</button>
+
+        </div>
+        <!-- 2-->
+        <div class="box-2">
+            <span>2</span>
+            <p class="heading">Web Development</p>
+            <p class="details">Creating an internal intranet web application for the University of Winnipeg, 
+                Applied Computer Science Department
+            </p>
+            <button id="box2-btn">Read More</button>
+        </div>
+        <!-- 3-->
+        <div class="box-3">
+            <span>3</span>
+            <p class="heading">Software Design</p>
+            <p class="details">Expanding creativity and capabilities through utilizing knowledge of 
+                data structures and algorithms to innovate software programs
+            </p>
+            <button id="box3-btn">Read More</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- Box 1 Modal -->
+<div id="box1-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p> < Robotic Process Automation (RPA) is a software project intended to modernize Health Canada 
+            internal staffing systems. With the rise of COVID-19 virtual work has become the new norm, and
+            in order to streamline manual processes, automation through UiPath technology
+            has become the new frontier. This process is done through creating algorithms, using
+            UiPath programming frameworks including loops, conditionals, and data structures. This programming software is the 
+            foundation of the "robots" created to automate tasks. To fulfill this project it requires for a Cloud server to 
+            be set up along with an extensive business analysis process to create a process map of what exactly
+            is automated. Through a full-scale project management, and change management plan, the project pilot was underway! /> </p>
+    </div>
+
+</div>
+
+<!-- Box 2 Modal -->
+<div id="box2-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p> < The Web-Development project through the University of Winnipeg, intends to create the first formal 
+            intranet site for the Applied Computer Science (ACS) Department. Innovating new technology and 
+            creating more efficient means of file sharing, organizng information and generating notifications
+            is an important element of ACS. This project included programming using HTML, CSS, Database Systems (SQL), 
+            and secure authentification keys designed with Javascript. /> </The></p>
+    </div>
+
+</div>
+
+<!-- Box 3 Modal -->
+<div id="box3-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p> < Creative Software Projects are the random projects I venture to create during the year. Some big some small, it is always
+            a goal to try new things and challenge myself. We could say this website is a prime 
+            example of an impromptu hackathon I had over a weekend to demonstrate my capabilities for an interview I had the following week :) . This
+            serves to give an idea of the neverending projects within my path.
+            Whether dealing with database languages, or using python and pandas technology 
+            it is important to learn to create different software projects both in and outside of school. My hope is to use these projects to ultimately
+            become and even better developer! />
+        </p>
+    </div>
+
+</div>
+
+<script>
+    // Get the modal
+    var modal1 = document.getElementById("box1-modal");
+    var modal2 = document.getElementById("box2-modal");
+    var modal3 = document.getElementById("box3-modal");
+
+    // Get the button that opens the modal
+    var btn1 = document.getElementById("box1-btn");
+    var btn2 = document.getElementById("box2-btn");
+    var btn3 = document.getElementById("box3-btn");
+
+    // Get the <span> element that closes the modal
+    var span1 = document.getElementsByClassName("close")[0];
+    var span2 = document.getElementsByClassName("close")[1];
+    var span3 = document.getElementsByClassName("close")[2];
+
+    // When the user clicks the button, open the modal 
+    btn1.onclick = function () {
+        modal1.style.display = "block";
+    }
+    btn2.onclick = function () {
+        modal2.style.display = "block";
+    }
+    btn3.onclick = function () {
+        modal3.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span1.onclick = function () {
+        modal1.style.display = "none";
+    }
+    span2.onclick = function () {
+        modal2.style.display = "none";
+    }
+    span3.onclick = function () {
+        modal3.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal1) {
+            modal1.style.display = "none";
+        } else if (event.target == modal2) {
+            modal2.style.display = "none";
+        } else if (event.target == modal3) {
+            modal3.style.display = "none";
+        }
+    }
+</script>
